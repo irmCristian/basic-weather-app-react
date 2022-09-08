@@ -1,9 +1,9 @@
 import axios from 'axios';
 import { React, useEffect, useState } from 'react';
-import rain from './assets/rain.gif'
-import sunset from './assets/sunset.jpg'
-import sunny from './assets/sunny.gif'
-import snow from './assets/snow.gif'
+// import rain from './assets/rain.gif'
+// import sunset from './assets/sunset.jpg'
+// import sunny from './assets/sunny.gif'
+// import snow from './assets/snow.gif'
 
 function App() {
 
@@ -23,17 +23,17 @@ function App() {
           console.log(err);
         })
       setLocation('')
-      changeBackground()
+      // changeBackground()
     }
   }
 
-  const changeBackground = () => {
-    if (data.main?.temp > 20) {
-      document.body.style.background = "url(./assets/sunny.gif)"
-    } else {
-      document.body.style.background = "url(./assets/rain.gif)"
-    }
-  }
+  // const changeBackground = () => {
+  //   if (data.main?.temp > 20) {
+  //     document.body.style.background = "url(./assets/sunny.gif)"
+  //   } else {
+  //     document.body.style.background = "url(./assets/rain.gif)"
+  //   }
+  // }
 
   return (
     <div className="App">
